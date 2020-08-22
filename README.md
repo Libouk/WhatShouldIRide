@@ -1,5 +1,7 @@
 # whatshouldiride
 
+What Should I Ride is my version of the EmberJS tutorial. Once I will have understood the basics of EmberJS, this app will provide informations regarding which surfboard or other water equipment to use depending on the weather forecasts.
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
