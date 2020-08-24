@@ -119,7 +119,7 @@ p {
   bottom: 5px;
 }
 
-.rentals label span {
+.equipments label span {
   font-size: 140%;
   margin: 50px auto 20px;
   display: block;
@@ -127,7 +127,7 @@ p {
   font-style: italic;
 }
 
-.rentals input {
+.equipments input {
   padding: 11px;
   font-size: 18px;
   width: 500px;
@@ -220,10 +220,10 @@ p {
 }
 
 /**
- * Individual Rental Listing
+ * Individual Equipement Listing
  */
 
-.rental {
+.equipment {
   margin-top: 15px;
   background-color: #f6f6f6;
   padding: 20px 25px;
@@ -233,22 +233,22 @@ p {
   flex-wrap: wrap;
 }
 
-.rental:hover {
+.equipment:hover {
   background-color: #f3f3f3;
 }
 
-.rental img {
+.equipment img {
   border-radius: 5px;
 }
 
-.rental .image {
+.equipment .image {
   flex-grow: 0;
   flex-basis: 150px;
   margin: 20px 25px;
   text-align: center;
 }
 
-.rental button.image {
+.equipment button.image {
   position: relative;
   cursor: pointer;
   border: none;
@@ -256,11 +256,11 @@ p {
   z-index: 1;
 }
 
-.rental button.image:focus {
+.equipment button.image:focus {
   outline: none;
 }
 
-.rental button.image:after {
+.equipment button.image:after {
   content: "";
   position: absolute;
   top: 0;
@@ -276,20 +276,20 @@ p {
   transition: opacity 0.25s ease-in-out;
 }
 
-.rental button.image:focus:after, .rental button.image:hover:after {
+.equipment button.image:focus:after, .equipment button.image:hover:after {
   opacity: 0.1;
 }
 
-.rental .image img {
+.equipment .image img {
   max-width: 100%;
 }
 
-.rental .image.large {
+.equipment .image.large {
   margin: 30px 25px 50px 25px;
   flex-basis: 100%;
 }
 
-.rental .image small {
+.equipment .image small {
   display: block;
   margin-top: 5px;
   margin-bottom: -15px;
@@ -300,13 +300,13 @@ p {
   position: relative;
 }
 
-.rental .image.large small {
+.equipment .image.large small {
   margin-top: 10px;
   margin-bottom: 0px;
   font-size: 110%;
 }
 
-.rental .details {
+.equipment .details {
   flex-basis: 50%;
   flex-grow: 2;
   display: flex;
@@ -317,108 +317,108 @@ p {
   align-content: space-around;
 }
 
-.rental h3 {
+.equipment h3 {
   flex-basis: 100%;
 }
 
-.rental h3 a {
+.equipment h3 a {
   display: inline;
 }
 
-.rental .detail {
+.equipment .detail {
   flex-basis: 50%;
   font-weight: 300;
   font-style: italic;
   white-space: nowrap;
 }
 
-.rental .detail span {
+.equipment .detail span {
   font-weight: 400;
   font-style: normal;
 }
 
-.rental .map {
+.equipment .map {
   flex-grow: 0;
   flex-basis: 150px;
   font-size: 0;
   margin: 0px 25px;
 }
 
-.rental .map img {
+.equipment .map img {
   width: 150px;
   height: 150px;
 }
 
-.rental.detailed {
+.equipment.detailed {
   background: none;
   align-items: flex-start;
 }
 
-.rental.detailed .image {
+.equipment.detailed .image {
   flex-basis: 320px;
 }
 
-.rental.detailed .image.large {
+.equipment.detailed .image.large {
   margin: 30px 25px 50px 25px;
   flex-basis: 100%;
 }
 
-.rental.detailed .details {
+.equipment.detailed .details {
   height: auto;
 }
 
-.rental.detailed h3 {
+.equipment.detailed h3 {
   font-size: 200%;
   margin-bottom: 10px;
 }
 
-.rental.detailed .detail {
+.equipment.detailed .detail {
   margin: 5px 0px;
   flex-basis: 100%;
   flex-shrink: 2;
 }
 
-.rental.detailed .description {
+.equipment.detailed .description {
   white-space: normal;
   flex-basis: 100%;
   flex-shrink: 1;
 }
 
-.rental.detailed .map {
+.equipment.detailed .map {
   flex-basis: 100%;
   margin: 50px 25px 25px 25px;
 }
 
-.rental.detailed .map img {
+.equipment.detailed .map img {
   width: 100%;
   height: auto;
 }
 
 @media only screen and (max-width: 919px) {
-  .rental.detailed .image, .rental.detailed .image.large {
+  .equipment.detailed .image, .equipment.detailed .image.large {
     margin: 30px 25px 25px 25px;
     flex-basis: 100%;
     cursor: default;
   }
 
-  .rental.detailed .image:hover {
+  .equipment.detailed .image:hover {
     flex-basis: 100%;
     cursor: default;
   }
 
-  .rental.detailed .image small {
+  .equipment.detailed .image small {
     display: none;
   }
 
-  .rental.detailed button.image:hover:after {
+  .equipment.detailed button.image:hover:after {
     opacity: 0;
   }
 
-  .rental.detailed button.image:focus:after {
+  .equipment.detailed button.image:focus:after {
     opacity: 0.1;
   }
 
-  .rental.detailed .map {
+  .equipment.detailed .map {
     margin-top: 25px;
   }
 }
