@@ -19,5 +19,6 @@ module('Integration | Component | equipment', function(hooks) {
     assert.dom('article .detail.length').includesText('6');
     assert.dom('article .detail.volume').includesText('28');
     assert.dom('article .image').exists();
+    assert.dom('article .map').exists();
   });
 });
