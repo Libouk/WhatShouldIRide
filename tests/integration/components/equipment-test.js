@@ -10,7 +10,19 @@ module('Integration | Component | equipment', function(hooks) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<Equipment />`);
+    this.setProperties({
+      equipment: {
+        title: 'Shortboard',
+        program: 'Hollow',
+        height: '1,5',
+        length: '6',
+        volume: '28',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/0/09/Riley-fish-Marlin2.jpg',
+        description: 'Short and narrow shortboard. Ideal for powerful waves, with hollow sections up to 2 meters.',
+      }
+    });
+
+    await render(hbs`<Equipment @equipement={{this.equipment}} />`);
 
     assert.dom('article').hasClass('equipment');
     assert.dom('article h3').hasText('Shortboard');

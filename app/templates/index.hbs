@@ -2,11 +2,12 @@
   <h2>Welcome to What Should I Ride!</h2>
   <p>The tool to help you decide which board you'll be riding today!</p>
   <LinkTo @route="about" class="button">About us</LinkTo>
-</Jumbo>>
+</Jumbo>
+
 <div class="equipments">
   <ul class="results">
-    <li><Equipment/></li>
-    <li><Equipment/></li>
-    <li><Equipment/></li>
+    <li><Equipment @equipment={{@model}}/></li>
+    <li><Equipment @equipment={{@model}}/></li>
+    <li><Equipment @equipment={{@model}}/></li>
   </ul>
 </div>
